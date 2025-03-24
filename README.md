@@ -23,13 +23,13 @@ The study investigates racial and ethnic disparities in access to high-quality f
 - **Follow-up 36 Months Post-First Hospitalization for Psychosis.pdf**  
   Final research poster summarizing study background, methodology, results, and implications.
 
-- **Data Prep/**  
+- **`Data Prep/`**  
   Scripts for cleaning and merging datasets across the 36-month follow-up period:
   - `1 to 36 Filter.py` – Filters patient records based on 36-month follow-up windows.
   - `Encounter Months.py` – Calculates encounter-based metrics by month after discharge.
   - `First & 275 Merge.R` – Merges initial hospitalization data with longitudinal follow-up records.
 
-- **Inferential Analysis/**  
+- **`Inferential Analysis/`**  
   Stata `.do` files for variable construction and statistical modeling:
   - `Variable Pre-processing.do` – Prepares variables for analysis, including transformations and missingness handling.
   - `Outpatient SS.do` – Analyzes outpatient service utilization across the follow-up period.
