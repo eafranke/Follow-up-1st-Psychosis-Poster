@@ -1,4 +1,4 @@
-# What Happened to Patients 36 Months Following a First Hospitalization for Psychosis at Cambridge Health Alliance? (1/1/2019 – 12/31/2023)
+# What Happened to Patients 36 Months Following a First Hospitalization for Psychosis at Cambridge Health Alliance? (1/1/2019–12/31/2023)
 
 ## About
 
@@ -20,12 +20,27 @@ The study investigates racial and ethnic disparities in access to high-quality f
 
 ## Repository Contents
 
-- **First Hospitalization for Psychosis at CHA.pdf**  
-  Final research poster summarizing findings, methodology, and policy implications.
+- **Follow-up 36 Months Post-First Hospitalization for Psychosis.pdf**  
+  Final research poster summarizing study background, methodology, results, and implications.
 
-- **Psychosis Data Preparation & Analysis 7-17-24.do**  
-  Stata script for data cleaning, variable creation, and outcome modeling.
+- **Data Prep/**  
+  Scripts for cleaning and merging datasets across the 36-month follow-up period:
+  - `1 to 36 Filter.py` – Filters patient records based on 36-month follow-up windows.
+  - `Encounter Months.py` – Calculates encounter-based metrics by month after discharge.
+  - `First & 275 Merge.R` – Merges initial hospitalization data with longitudinal follow-up records.
+
+- **Inferential Analysis/**  
+  Stata `.do` files for variable construction and statistical modeling:
+  - `Variable Pre-processing.do` – Prepares variables for analysis, including transformations and missingness handling.
+  - `Outpatient SS.do` – Analyzes outpatient service utilization across the follow-up period.
+  - `Second Poster Analysis.do` – Main inferential analysis script generating results for the poster.
 
 ## Data Availability
 
 Due to the presence of sensitive health information, the datasets used in this analysis are not publicly available.
+
+## Contact
+
+**Erik Franke**  
+efranke@falcon.bentley.edu  
+Bentley University Academic Technology Center | Research Assistant
